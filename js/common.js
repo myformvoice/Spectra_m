@@ -19,7 +19,48 @@ $(document).ready(function() {
 		$('.slick-dots li[aria-hidden="true"]').show();
 	});	
 		$('.slick-dots li[aria-hidden="true"]').hide();
-	
+
+	// Слайдер популярные товары
+	$('.popular_items.slider').slick({
+		slidesToShow: 3,
+		slidesToScroll: 1,
+		centerMode: true,
+		centerPadding: '228px',
+		focusOnSelect: true,
+		responsive: [
+		{
+			breakpoint: 1600,
+			settings: {
+				centerPadding: '160px',
+				arrows: true,
+			}
+		},
+		{
+			breakpoint: 1200,
+			settings: {
+				centerPadding: '60px',
+				arrows: true,
+			}
+		},
+		{
+			breakpoint: 980,
+			settings: {
+				centerPadding: '140px',
+				slidesToShow: 1,
+				arrows: true,
+			}
+		},
+		{
+			breakpoint: 640,
+			settings: {
+				centerPadding: '25px',
+				slidesToShow: 1,
+				arrows: false,
+			}
+		}
+		]
+	});
+
 
 	// Открыть форму обратной связи
 	$('.mail_btn').click(function(event) {
@@ -127,15 +168,6 @@ $(document).ready(function() {
 			
 		}
 	});
-
-	if ($(window).width() <= 979) {
-		
-	}
-
-
-
-
-
 
 
 
