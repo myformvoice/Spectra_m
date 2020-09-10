@@ -52,6 +52,17 @@
 		font-size: 38px;
 		line-height: 48px;
 	}
+	footer .contacts {
+		justify-content: center;
+	}
+	footer .contacts p {
+		width: 100%;
+		margin-bottom: 32px;
+		text-align: center;
+	}
+	footer .contacts a {
+		margin: 0 16px;
+	}
 }
 
 /* Medium Devices, Desktops */
@@ -409,7 +420,70 @@
 	.mission_wrapper .content {
 		width: auto;
 	}
-
+	footer .contacts {
+		padding-top: 47px;
+		padding-bottom: 23px;
+	}
+	footer .copyright {
+		padding-top: 24px;
+	}
+	footer .contacts,
+	footer .copyright,
+	footer .copyright .links {
+		flex-direction: column;
+	}
+	footer .contacts p {
+		margin-bottom: 24px;
+		font-size: 15px;
+		line-height: 24px;
+	}
+	footer .contacts a {
+		margin: 0;
+		margin-bottom: 24px;
+		font-size: 25px;
+		line-height: 36px;
+		letter-spacing: 0.7px;
+	}
+	footer .contacts a.show_map {
+		display: block;
+		text-decoration: underline;
+		margin-bottom: 48px;
+		font-size: 18px;
+		line-height: 28px;
+		letter-spacing: none;
+	}
+	footer .copyright a,
+	footer .copyright p {
+		margin: 0;
+		margin-bottom: 16px;
+	}
+	footer .copyright .links {
+		margin-top: 8px;
+	}
+	footer .copyright .links a {
+		margin-bottom: 0;
+		margin: 0 7px;
+	}
+	footer .copyright .links .icon.i_Cronlogo {
+		margin: 0;
+		margin-top: 8px;
+		background-position: -4px 0;
+	}
+	footer .copyright .links .icon.i_youtube{
+		background: url(../img/youtube.svg) center no-repeat;
+		background-size: 48px 48px;
+		width: 48px;
+		height: 48px;
+	}
+	footer .copyright .links .icon.i_linkedIN{
+		background: url(../img/linkedIN.svg) center no-repeat;
+		background-size: 48px 48px;
+		width: 48px;
+		height: 48px;
+	}
+	#map iframe {
+		height: 350px;
+	}
 }
 
 /* Extra Small Devices, Phones */
